@@ -1,0 +1,348 @@
+* {
+    box-sizing: border-box;
+}
+body, html {margin: 0; 
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* ===== Header ===== */
+
+header {
+    display: flex;
+    width: 100%;
+    max-width: 1920px;
+    background-color: #ba1f2d;
+    justify-content: center;
+    height: 8rem;
+    align-items: center;
+}
+
+.logo {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.logo img {
+    padding-bottom: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.contact {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: 5em;
+}
+
+.contact img {
+    height: 20%;
+    width: 20%;
+
+}
+
+.contact p {
+    color: white;
+}
+
+/* ======== Hero Image ======== */
+
+.hero-image img {
+    width: 100%;
+}
+
+.hero-image {
+    display: flex;
+}
+
+/* ======= H2-header ====== */
+.h2-header {
+    background: -webkit-linear-gradient(#9f1a26 0%, #cf1c2c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1.5em 0;
+}
+
+
+/* ======== Benefits ======== */
+
+.benefits {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.benefit-content {
+    margin: 0 3em; 
+}
+
+
+.red-line {
+    margin: 0 auto;
+}
+
+.benefit-headline {
+    text-align: center;
+    background-color: #ba1f2d;
+    color: white;
+    margin: 0;
+}
+
+.benefit-content p {
+    text-align: center;
+    color: #b31a1f;
+    font-size: 3rem;
+    margin: -0.8em 0 0.5em 0;
+}
+
+.benefit-content ul {
+    list-style: none;
+}
+
+.benefit-content ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #b31a1f; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+.benefit-image {
+    display: flex;
+    justify-content: center;
+}
+
+.red-line {
+    width: 25%;
+    border: #b31a1f 1px solid;
+}
+
+/* what you be doing */
+
+.will-do {
+    position: relative;
+}
+
+.slideshow-container {
+    display: flex;
+}
+
+.slideandtext-container {
+    width: calc(100%/3);
+    background-color: #f0f0f0;
+}
+
+.slide-text {
+    text-align: center;
+    margin: 1.5em 0;
+    padding: 0.5em;
+    border-right: #9f1a26 1px solid;
+}
+
+.slide-image {
+    max-width: 100vw;
+}
+
+
+#prevBtn {
+    margin: 1em 0 0 3em;
+    position: absolute;
+    left: 45%;
+    color: red;
+    display:inline-block;
+    -webkit-transform:scale(1.5,1); /* Safari and Chrome */
+    -moz-transform:scale(1.5,1); /* Firefox */
+    -ms-transform:scale(1.5,1); /* IE 9 */
+    -o-transform:scale(1.5,1); /* Opera */
+    transform:scale(1.5,1); /* W3C */
+    cursor: pointer;
+}
+
+#nextBtn {
+    margin: 1em 0 0 3em;
+    position: absolute;
+    left: 49%;
+    color: red;
+    display:inline-block;
+    -webkit-transform:scale(1.5,1); /* Safari and Chrome */
+    -moz-transform:scale(1.5,1); /* Firefox */
+    -ms-transform:scale(1.5,1); /* IE 9 */
+    -o-transform:scale(1.5,1); /* Opera */
+    transform:scale(1.5,1); /* W3C */
+    cursor: pointer;
+}
+
+/* will-be-chosen */
+
+.will-be-chosen {
+    margin: 5% 0 0 0;
+}
+
+.content-section {
+    display: flex;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.middle-section {
+    flex: 3;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.right-section {
+    flex: 1;
+}
+
+#chosen-image {
+    margin-top: 1em;
+    max-width: 20vw;
+    padding: 0;
+    bottom: 0;
+}
+
+
+#nhanvienbubble {
+    /* position: absolute; */
+    max-width: 10vw;
+    /* left: 20%; */
+    /* margin-bottom: auto; */
+    cursor: pointer;
+}
+
+#chuyenvienbubble {
+    /* position: absolute; */
+    max-width: 10vw;
+    /* margin-bottom: auto; */
+    cursor: pointer;
+}
+
+.nhanviensection {
+    position: relative;
+}
+
+#nhanvientext {
+    position: absolute;
+    font-size: 1.3vw;
+    z-index: 1;
+    top: -2.5%;
+    left: 13%;
+    color: white;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.chuyenviensection {
+    position: relative;
+}
+
+#chuyenvientext {
+    position: absolute;
+    font-size: 1.3vw;
+    top: -2.5%;
+    left: 5%;
+    color: white;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.hidetext {
+    display: none;
+}
+
+/* shine */
+#will-shine {
+    background-color: #f0f0f0;
+    padding-top: 1%;
+}
+
+#will-shine #first-section {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.will-shine-h2-header {
+    background: -webkit-linear-gradient(#9f1a26 0%, #cf1c2c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1.5em 0 0.5em 0;
+}
+
+#first-dash {
+    width: 2.5vw;
+    margin: auto;
+}
+
+#shine-slide-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+#slide-container-chung {
+    display: flex;
+    width: 60%;
+    border: 1px solid black;
+}
+
+#big-picture {
+    margin-right: 2.5em
+}
+
+#big-picture img {
+    width: 10vw;
+}
+
+#content {
+    border-bottom: 1px red solid;
+}
+
+#content h2 {
+    color: #ab023e;
+}
+
+#tes-quote {
+    width: 50%;
+}
+
